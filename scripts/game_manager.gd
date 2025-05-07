@@ -1,9 +1,12 @@
 extends Node
 
-var score = 0
+var score = 12
 
-@onready var score_lable: Label = $ScoreLable
+@onready var score_label: Label = $ScoreLabel
 
 func add_point():
 	score += 1
-	score_lable.text = "You collected " + str(score) + "/12 coins."
+	score_label.text = "Você coletou " + str(score - 12) + "/12 moedas."
+	
+	if score >= 108 + 12:
+		get_tree().reload_current_scene()

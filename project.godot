@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Plataforma Legal"
+config/name="Projeto Jogos"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Music="*res://scenes/music.tscn"
+GameManager="*res://scripts/game_manager.gd"
+Portal1="*res://scripts/portal1.gd"
 
 [editor]
 
